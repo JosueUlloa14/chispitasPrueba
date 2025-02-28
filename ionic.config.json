@@ -1,0 +1,7 @@
+{
+  "name": "chispitasPrueba",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
