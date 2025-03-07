@@ -1,0 +1,53 @@
+<ion-content class="parent">
+  <div class="bg-nubes radio-bottom-right"></div>
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+    <ion-fab-button routerLink="/home" class="fab-transparente">
+      <ion-icon name="bulb-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <ion-grid class="ion-padding">
+    <ion-row class="centrar">
+      <ion-col size="12" class="centrar ion-margin">
+        <img src="/assets/img/logo.png" alt="Logo" class="logo" />
+      </ion-col>
+      <ion-col size="10" size-sm="6" size-md="4">
+        <form>
+          <div>
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-input" id="nombre" required />
+          </div>
+          <!--paterno-->
+          <div>
+            <label for="paterno" class="form-label">Apellido Paterno</label>
+            <input type="text" class="form-input" id="paterno" required />
+          </div>
+          <!--materno-->
+          <div>
+            <label for="materno" class="form-label">Apellido Materno</label>
+            <input type="text" class="form-input" id="materno" required />
+          </div>
+          <!--email-->
+          <div>
+            <label for="email" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-input" id="email" required />
+          </div>
+          <!--password-->
+          <div>
+            <label for="password" class="form-label">Contraseña</label>
+            <input type="password" class="form-input" id="password" required />
+          </div>          
+          <div class="centrar">
+            <button type="succes" class="btn my-1">Registrar</button>
+          </div>
+        </form>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<ion-footer class="bg-primary">
+  <div class="radio-top-left bg-auto centrar">
+    <ion-router-link routerLink="/login" class="enlace-subrayado">
+      Tengo cuenta
+    </ion-router-link>    
+  </div>
+</ion-footer>
