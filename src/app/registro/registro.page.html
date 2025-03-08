@@ -35,7 +35,16 @@
           <div>
             <label for="password" class="form-label">Contraseña</label>
             <input type="password" class="form-input" id="password" required />
-          </div>          
+          </div> 
+          <!--select de rol(escuela, profesor, alumno)-->        
+          <div>
+            <label for="rol" class="form-label">Rol</label>
+            <select class="form-input" id="rol" required>
+              <option value="alumno">Alumno</option>
+              <option value="escuela">Escuela</option>
+              <option value="profesor">Profesor</option>
+            </select>
+          </div>
           <div class="centrar">
             <button type="succes" class="btn my-1">Registrar</button>
           </div>
