@@ -1,0 +1,51 @@
+ion-grid {
+    --ion-grid-padding: 0;
+    --ion-grid-column-padding: 0;
+}
+ion-row {
+    --ion-row-padding: 0;
+}
+ion-footer{
+    box-shadow: none;
+}
+.parent {
+    position: relative;
+    transform: translate(0);
+}
+.bg-nubes-fixed {
+    position: fixed;
+    background: var(--ion-color-primary);
+    background-image: url('/assets/img/nubes.png'); 
+    background-repeat: repeat;
+    background-size: 500px;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+.logo {
+    height: 20vh;
+}
+.enlace-subrayado {
+    text-decoration: underline;
+    font-size: 1.1rem;
+    padding: 1rem;
+    color: #FB6178;
+}
+.fab-transparente {
+    --background: transparent;
+    --box-shadow: none;
+    color: #fff;
+}
+.radio-top-left {
+    border-radius: 75px 0px 0px 0px;
+}
+.radio-bottom-right {
+    border-radius: 0px 0px 75px 0px; 
+}
+.centrar {
+    display: flex;
+    justify-content: center;
+}
+.bg-primary{
+    background: var(--ion-color-primary);
+}

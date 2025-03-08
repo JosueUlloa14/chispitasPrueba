@@ -6,15 +6,16 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-content>
+  <swiper-container pagination="true" navigation="true" onSlideChange="checkSlide()">
+    <swiper-slide>
+      <p> Hola este es 1 </p>
+    </swiper-slide>
+    <swiper-slide>
+      <p> Este es 2 </p>
+    </swiper-slide>
+    <swiper-slide>
+      <p> este es el numero 3</p>
+    </swiper-slide>
+  </swiper-container>
 </ion-content>

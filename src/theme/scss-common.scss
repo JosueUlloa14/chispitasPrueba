@@ -1,0 +1,54 @@
+
+/* Formularios */
+.form-label {
+    color: #fff;
+    font-size: 1.5rem;
+}
+.form-input {
+    background-color: #fff;
+    color: #000;
+    width: 100%;
+    padding: 10px;
+    margin: .3rem 0;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+}
+input:focus {
+    background-color: #f0f0f0; 
+    outline: none;
+}
+
+/* Botones */
+.btn {
+    background-color: #FB6178; 
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+/* Fondos y Textos */
+.bg-nubes {
+    background: var(--ion-color-primary);
+    background-image: url('/assets/img/nubes.png'); 
+    background-repeat: repeat;
+    background-size: 500px;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+.bg-auto{
+    background-color: var(--ion-background-color, #fff);
+    color: var(--ion-text-color, #000);
+}
+
+/* Margenes */
+.mx-1{
+    margin: 0 1rem;
+}
+.my-1{
+    margin: 1rem 0;
+}
+
