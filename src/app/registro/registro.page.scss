@@ -1,1 +1,7 @@
 @import "src/theme/auth-common.scss";
+
+:host{
+    .form-label{
+        color: var(--ion-background-color, #fff);
+    }
+}
