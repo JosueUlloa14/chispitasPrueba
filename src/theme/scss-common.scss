@@ -20,35 +20,198 @@ input:focus {
 }
 
 /* Botones */
-.btn {
-    background-color: #FB6178; 
-    color: white;
+.btn-coral {
+    background-color: var(--ion-color-coral); 
+    color: var(--ion-color-coral-contrast);
     font-size: 1.125rem;
     font-weight: 600;
     padding: 1rem;
     border-radius: 10px;
 }
-
+.btn-coral:hover {
+    background-color: var(--ion-color-coral-shade);
+}
+.btn-coral-tint {
+    background-color: var(--ion-color-coral-tint); 
+    color: var(--ion-color-coral-contrast);
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.btn-ionic-coral {
+    --background: var(--ion-color-coral);
+    --color: var(--ion-color-coral-contrast);
+}
+.btn-ionic-coral-tint {
+    --background: var(--ion-color-coral-tint);
+    --color: var(--ion-color-coral-contrast);
+}
 /* Fondos y Textos */
-.bg-nubes {
+.bg-nubes-header {
+    position: absolute;  /* Hace que el div cubra todo el toolbar */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background: var(--ion-color-primary);
     background-image: url('/assets/img/nubes.png'); 
     background-repeat: repeat;
-    background-size: 500px;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
+    background-size: 250px;
+    width: 100%;
+    height: 100%;
 }
 .bg-auto{
     background-color: var(--ion-background-color, #fff);
     color: var(--ion-text-color, #000);
 }
+.color-auto{
+    color: var(--ion-text-color, #000);
+}
+.parent-relative {
+    position: relative;
+    transform: translate(0);
+}
+.bg-auto-fixed{
+    position: fixed;
+    background: var(--ion-background-color, #fff);
+    color: var(--ion-text-color, #000);
+    min-width: 100%;
+    min-height: 100%;
+}
 
 /* Margenes */
+.m-0{
+    margin: 0;
+}
+//margen auto
+.m-auto{
+    margin: auto;
+}
+//margen x auto
+.mx-auto{
+    margin: 0 auto;
+}
+//margen y auto
+.my-auto{
+    margin: auto 0;
+}
+.m-1{
+    margin: 1rem;
+}
 .mx-1{
     margin: 0 1rem;
 }
 .my-1{
     margin: 1rem 0;
 }
+.m-2{
+    margin: 2rem;
+}
+.mx-2{
+    margin: 0 2rem;
+}
+.my-2{
+    margin: 2rem 0;
+}
+.m-3{
+    margin: 3rem;
+}
+.mx-3{
+    margin: 0 3rem;
+}
+.my-3{
+    margin: 3rem 0;
+}
+/* Padding */
+.p-1{
+    padding: 1rem;
+}
+.px-1{
+    padding: 0 1rem;
+}
+.py-1{
+    padding: 1rem 0;
+}
+.p-2{
+    padding: 2rem;
+}
+.px-2{
+    padding: 0 2rem;
+}
+.py-2{
+    padding: 2rem 0;
+}
+.p-3{
+    padding: 3rem;
+}
+.px-3{
+    padding: 0 3rem;
+}
+.py-3{
+    padding: 3rem 0;
+}
 
+/* Radio */
+.radio-top-right {
+    border-radius: 0px 75px 0px 0px;
+}
+.radio-top-left {
+    border-radius: 75px 0px 0px 0px;
+}
+.radio-bottom-right {
+    border-radius: 0px 0px 75px 0px; 
+}
+.radio-bottom-left {
+    border-radius: 0px 0px 0px 75px;
+}
+
+/* Centrar */
+//centrar vertical y horizontal
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+//centrar horizontal
+.center-x {
+    display: flex;
+    justify-content: center;
+}
+//centrar vertical
+.center-y {
+    display: flex;
+    align-items: center;
+}
+//centrar horizontal y vertical, dirección de las columnas
+.center-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+//centrar horizontal y vertical, dirección de las columnas
+.center-column-y {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+//centrar horizontal y vertical, dirección de las columnas
+.center-column-x {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+// centrar texto horizontal y vertical
+.center-text {
+    text-align: center;
+    vertical-align: middle;
+}
+// centrar texto horizontal
+.center-text-x {
+    text-align: center;
+}
+// centrar texto vertical
+.center-text-y {
+    vertical-align: middle;
+}

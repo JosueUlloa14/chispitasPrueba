@@ -1,21 +1,110 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <div class="bg-nubes-header radio-bottom-right"></div>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <swiper-container pagination="true" navigation="true" onSlideChange="checkSlide()">
-    <swiper-slide>
-      <p> Hola este es 1 </p>
+<ion-content fullscreen="true" color="primary" class="parent-relative center">
+  <div class="bg-auto-fixed radio-top-left"></div>
+  <swiper-container #swiperContainer init="false" class="color-auto center">
+    <!-- Slide 1: Introducción -->
+    <swiper-slide class="center">
+      <ion-grid>
+        <ion-row class="center p-3">
+          <ion-col size="10" size-md="5" class="center-column">
+            <img class="img-slider" src="/assets/img/logo.png" alt="Chispitas Mentales">
+          </ion-col>
+          <ion-col size="10" size-md="4" class="center-column">
+            <h1>Educación Innovadora para el Futuro</h1>
+            <p>Bienvenido a Chispitas mentales, un sistema didáctico y tecnológico diseñado para transformar la educación primaria mediante juegos interactivos, dispositivos IoT y análisis de datos.</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </swiper-slide>
-    <swiper-slide>
-      <p> Este es 2 </p>
+    <swiper-slide class="center">
+      <ion-grid>
+        <ion-row class="center p-3">
+          <ion-col size="10" size-md="4" class="center-column">
+            <h1>Aprendizaje Práctico con IoT</h1>
+            <p>Nuestros dispositivos IoT permiten a los niños aprender jugando. Desde secuencias de colores hasta reconocimiento de formas, cada actividad fomenta el desarrollo cognitivo y motor.</p>
+          </ion-col>
+          <ion-col size="10" size-md="4" class="center-column">
+            <dotlottie-player src="https://lottie.host/ca492330-ce58-45df-a889-15399506c566/KHeGUKqne3.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </swiper-slide>
-    <swiper-slide>
-      <p> este es el numero 3</p>
+    <swiper-slide class="center p-3">
+      <ion-grid>
+        <ion-row class="center">
+          <ion-col size="10" size-md="4" class="center-column">
+            <h1>Juegos Divertidos, Aprendizaje Efectivo</h1>
+            <p>Explora nuestros juegos diseñados para hacer que el aprendizaje sea divertido y efectivo. ¡Los niños aprenderán sin darse cuenta!</p>
+          </ion-col>
+          <ion-col size="10" size-md="4" class="center-column">
+            <dotlottie-player src="https://lottie.host/06d1bd81-d2f8-40c9-9f67-d7941feb351d/NtK67kYpcz.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </swiper-slide>
+    <swiper-slide class="center p-3">
+      <ion-grid>
+        <ion-row class="center">
+          <ion-col size="10" size-md="4" class="center-column">
+            <h1>Herramientas inteligentes para docentes</h1>
+            <p>Nuestra plataforma web ofrece análisis detallados sobre el progreso de los estudiantes, permitiendo a los profesores personalizar su enseñanza y mejorar resultados.</p>
+          </ion-col>
+          <ion-col size="10" size-md="4" class="center-column">
+            <dotlottie-player src="https://lottie.host/96c4bbb5-e53d-4a11-ab85-3878a8821704/K0LsyCx8x7.lottie" background="transparent" speed="1" loop autoplay></dotlottie-player>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </swiper-slide>
+    <swiper-slide class="center p-3">
+      <ion-grid>
+        <ion-row class="center">
+          <ion-col size="10" size-md="4" class="center-column">
+            <h1>Seguimiento en Tiempo Real</h1>
+            <p>Accede a nuestra plataforma web desde cualquier lugar para monitorear el progreso de tus estudiantes y tomar decisiones informadas.</p>
+          </ion-col>
+          <ion-col size="10" size-md="4" class="center-column">
+            <dotlottie-player src="https://lottie.host/786a2520-0f2e-461c-9c78-f125dd84142d/w8S9B7xniL.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </swiper-slide>
+    <swiper-slide class="center">
+      <ion-grid>
+        <ion-row class="center p-3">
+          <ion-col size="10" size-md="4" class="center-column">
+            <h1>Contribuyendo a la Agenda 2030</h1>
+            <p>Nuestro proyecto apoya el Objetivo de Desarrollo Sostenible #4: Educación de Calidad. Estamos comprometidos con mejorar el aprendizaje para todos.</p>
+          </ion-col>
+          <ion-col size="10" size-md="4" class="center-column">
+            <dotlottie-player src="https://lottie.host/db8fd3e0-f1fd-49e2-8a24-dd743627e2bb/PVboqEKcTL.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </swiper-slide>
+    <swiper-slide class="center p-3">
+      <ion-grid>
+        <ion-row class="center">
+          <ion-col size="10" size-md="4" class="center-column">
+            <h1>Únete a la Revolución Educativa</h1>
+            <p>Descubre cómo Chispitas mentales puede transformar el aprendizaje en tu escuela.</p>
+            <div>
+              <!-- boton de registro -->
+              <ion-button fill="clear" class="mx-1 btn-ionic-coral-tint" routerLink="/registro">Regístrate</ion-button>
+              <!-- boton de inicio de sesión -->
+              <ion-button class="mx-1 btn-ionic-coral" routerLink="/login">Inicia Sesión</ion-button>
+            </div>
+          </ion-col>
+          <ion-col size="10" size-md="4" class="center-column">
+            <dotlottie-player src="https://lottie.host/ab7bb7bd-8435-4496-9145-e23261cf2af0/HGOepT3Iro.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </swiper-slide>
+    
   </swiper-container>
 </ion-content>
