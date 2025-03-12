@@ -22,7 +22,7 @@
 
         
 
-        <ion-card *ngFor="let clase of clases">
+        <ion-card *ngFor="let clase of clases" routerLink="/clase">
           <img [src]="clase.img" alt="Clase">
           <ion-card-header>
             <ion-card-title>{{ clase.id }}</ion-card-title>
