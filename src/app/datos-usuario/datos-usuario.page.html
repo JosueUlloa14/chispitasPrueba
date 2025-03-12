@@ -1,0 +1,33 @@
+<ion-content class="parent">
+  <div class="bg-nubes-fixed radio-bottom-right"></div>
+  <ion-fab vertical="top" slot="fixed">
+    <ion-fab-button routerLink="/inicio-alumno" class="fab-transparente">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  
+  <ion-grid class="ion-padding">
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="10" size-sm="6" size-md="4" class="ion-text-center">
+        <img [src]="usuarios.foto" 
+             style="width: 150px; height: 150px; border-radius: 50%;" 
+             alt="Foto de usuario" 
+             class="profile-img">
+
+        <h2 style="color: white;">{{ usuarios.nombre }} {{ usuarios.apellidoP }}</h2>
+        <h2 style="color: white;">{{ usuarios.rol }}</h2>
+        <p style="color: white;">{{ usuarios.correo }}</p>
+
+        <button type="succes" routerLink="/login" class="btn-coral my-1">Cerrar Sesión</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<ion-footer class="bg-primary">
+  <div class="radio-top-left bg-auto centrar">
+    <div class="enlace-cerrar">
+      Chispitas Mentales
+    </div>    
+  </div>
+</ion-footer>
