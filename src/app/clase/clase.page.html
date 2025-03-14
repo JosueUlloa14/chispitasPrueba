@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <div class="bg-nubes-header radio-bottom-right"></div>
+    <ion-title style="color: white;" slot="end">{{ usuario.nombre }}</ion-title>
+    
+    <ion-buttons slot="end">
+      <ion-button routerLink="/datos-usuario">
+        <img alt="Foto de usuario" [src]="usuario.foto"
+          style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover;">
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true" color="primary" class="parent-relative center">
+  <div class="bg-auto-fixed radio-top-left"></div>
+  <ion-content class="ion-padding">
+  <h2>{{ datos.nombre }}</h2>
+  <p>{{ datos.periodo }}</p>
+  <h1>{{ datos.promedio }}</h1>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <div class="card amarillo">
+          <p>Secuencia de colores</p>
+          <h3>{{ datos.secuencia }}</h3>
+        </div>
+      </ion-col>
+      <ion-col size="6">
+        <div class="card verde">
+          <p>Atrapa el sonido</p>
+          <h3>{{ datos.sonido }}</h3>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+        <div class="card morado">
+          <p>Reconocimiento de formas</p>
+          <h3>{{ datos.formas }}</h3>
+        </div>
+      </ion-col>
+      <ion-col size="6">
+        <div class="card azul">
+          <p>Problemas matemáticos</p>
+          <h3>{{ datos.matematicas }}</h3>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+</ion-content>

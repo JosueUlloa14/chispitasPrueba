@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <div class="bg-nubes-header radio-bottom-right"></div>
+    <ion-title style="color: white;" slot="end">{{ usuario.nombre }}</ion-title>
+    
+    <ion-buttons slot="end">
+      <ion-button routerLink="/datos-usuario">
+        <img alt="Foto de usuario" [src]="usuario.foto"
+          style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover;">
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true" color="primary" class="parent-relative center">
+  <div class="bg-auto-fixed radio-top-left"></div>
+  <ion-grid>
+    <ion-row>
+      <ion-col size-lg="4" size-xs="1"></ion-col>
+      <ion-col size-lg="4" size-xs="10">
+        <h1 style="text-align: center;">Clases</h1>
+
+        
+
+        <ion-card *ngFor="let clase of clases" routerLink="/clase">
+          <img [src]="clase.img" alt="Clase">
+          <ion-card-header>
+            <ion-card-title>{{ clase.id }}</ion-card-title>
+            <ion-card-subtitle>{{ clase.alumnos }} alumnos</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <!-- Aquí puedes agregar más contenido si lo deseas -->
+          </ion-card-content>
+        </ion-card>
+
+      </ion-col>
+      <ion-col size-lg="4" size-xs="1"></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

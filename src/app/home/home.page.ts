@@ -21,7 +21,10 @@ export class HomePage {
     effect: 'cube',
     cubeEffect: {
       shadow: false,
-      slideShadows: false,    },
+      slideShadows: false,
+      shadowOffset: 50,
+      shadowScale: 0.4,
+    },
     pagination: {
       clickable: true,
       dynamicBullets: true,
@@ -32,6 +35,11 @@ export class HomePage {
         if (prevButton) {
           prevButton.style.display = 'none';
         }
+        setTimeout(() => {
+          swiper.params.cubeEffect.shadow = true;
+          swiper.params.cubeEffect.slideShadows = true;
+          swiper.update();
+        }, 500);
       },
       slideChange: (swiper: any) => {
         const totalSlides = swiper.slides.length;
