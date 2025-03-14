@@ -6,7 +6,7 @@
     <ion-buttons slot="end">
       <ion-button routerLink="/datos-usuario">
         <img alt="Foto de usuario" [src]="usuario.foto"
-          style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover;">
+          style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover; margin-right: 15px;">
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
@@ -16,12 +16,9 @@
   <div class="bg-auto-fixed radio-top-left"></div>
   <ion-grid>
     <ion-row>
-      <ion-col size-lg="4" size-xs="1"></ion-col>
-      <ion-col size-lg="4" size-xs="10">
+      <ion-col size-lg="2" size-xs="1"></ion-col>
+      <ion-col size-lg="8" size-xs="10">
         <h1 style="text-align: center;">Clases</h1>
-
-        
-
         <ion-card *ngFor="let clase of clases" routerLink="/clase">
           <img [src]="clase.img" alt="Clase">
           <ion-card-header>
@@ -34,7 +31,7 @@
         </ion-card>
 
       </ion-col>
-      <ion-col size-lg="4" size-xs="1"></ion-col>
+      <ion-col size-lg="2" size-xs="1"></ion-col>
     </ion-row>
   </ion-grid>
 </ion-content>
